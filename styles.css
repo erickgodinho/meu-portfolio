@@ -252,51 +252,45 @@ section#contato .social-links a {
   color: #fff; /* Deixa o texto mais destacado ao passar o mouse */
 }
 
-.certificacoes {
-  margin-top: 2rem;
-  text-align: left;
+/* Estilos para a seção Certificações */
+#certificacoes {
+  background-color: #fff; /* Manter fundo branco para consistência com outras seções */
+  padding: 60px 0; /* Espaçamento maior para destacar a seção */
+  color: #333; /* Cor padrão de texto */
 }
 
-.certificacoes ul {
+#certificacoes .section-title {
+  font-size: 2.5rem; /* Tamanho de fonte maior para o título */
+  text-align: center; /* Centralizar o título */
+  color: #222; /* Cor escura para o título */
+  margin-bottom: 30px; /* Espaço abaixo do título */
+  font-weight: bold; /* Título em negrito */
+}
+
+#certificacoes .certificados-lista ul {
   list-style: none;
   padding: 0;
+  text-align: center; /* Centralizar a lista de certificações */
 }
 
-.certificacoes ul li {
-  margin: 1rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#certificacoes .certificados-lista li {
+  margin: 15px 0; /* Espaçamento entre os itens */
 }
 
-.certificacoes ul li span {
-  color: #bbb;
-  font-size: 1rem;
+#certificacoes .certificados-lista a {
+  color: #0056b3; /* Cor de link consistente com outras seções */
+  font-size: 1.2rem; /* Fonte um pouco maior para os links */
+  text-decoration: none; /* Remover sublinhado */
+  font-weight: normal;
+  transition: color 0.3s; /* Suavizar a transição de cor */
 }
 
-.btn-certificado {
-  text-decoration: none;
-  background-color: #06d6a0;
-  color: #0f0f0f;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  transition: background-color 0.3s;
+#certificacoes .certificados-lista a:hover {
+  color: #ff6600; /* Cor de hover com um tom laranja que se destaca */
+  text-decoration: underline; /* Sublinhado no hover */
 }
 
-.btn-certificado:hover {
-  background-color: #04a679;
-}
 
-/* Rodapé */
-.footer {
-  text-align: center;
-  padding: 1rem 0;
-  background-color: #0f0f0f;
-  color: #bbb;
-  font-size: 1rem;
-  margin-top: 2rem;
-}
 
 
 
