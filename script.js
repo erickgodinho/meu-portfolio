@@ -37,37 +37,5 @@ menuLinks.forEach(link => {
   });
 });
 
-// Scroll suave ao clicar no logo
-document.querySelector('.home-link').addEventListener('click', (e) => {
-  e.preventDefault();
-  document.querySelector('#hero').scrollIntoView({ behavior: 'smooth' });
-});
 
-// Gráfico de Pizza - Front-End
-const canvas = document.getElementById('grafico-frontend');
-if (canvas) {
-  const ctx = canvas.getContext('2d');
-  const data = {
-    labels: ['HTML/CSS', 'React', 'JavaScript'],
-    datasets: [{
-      data: [40, 30, 30], // Percentuais de proficiência
-      backgroundColor: ['#06d6a0', '#118ab2', '#ffd166'], // Cores do gráfico
-      hoverOffset: 4
-    }]
-  };
 
-  new Chart(ctx, {
-    type: 'pie',
-    data: data,
-    options: {
-      plugins: {
-        legend: {
-          position: 'bottom',
-          labels: {
-            color: '#fff'
-          }
-        }
-      }
-    }
-  });
-}
