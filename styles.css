@@ -1,0 +1,305 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Layout principal */
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #0f0f0f;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 3rem;
+  color: #06d6a0;
+  margin: 0;
+}
+
+.logo p {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.logo span {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.menu a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin: 1rem 0;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #06d6a0;
+}
+
+.social-links a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.social-links a:hover {
+  color: #06d6a0;
+}
+
+main {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero .highlight {
+  color: #06d6a0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.hero .button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #06d6a0;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.hero .button:hover {
+  background-color: #04b380;
+}
+/* Escondendo seções por padrão */
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+/* Títulos de seção */
+main section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #06d6a0;
+  text-align: center;
+}
+
+/* Parágrafos */
+main section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #bbb;
+}
+
+/* Estilo para habilidades */
+.habilidades {
+  padding: 4rem 2rem;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.habilidades h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #06d6a0;
+}
+
+.habilidades-conteudo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.habilidade {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.habilidade h3 {
+  font-size: 1.5rem;
+  color: #06d6a0;
+}
+
+.habilidade p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #bbb;
+}
+
+.habilidade ul {
+  list-style: none;
+  padding: 0;
+}
+
+.habilidade ul li {
+  margin: 0.5rem 0;
+  color: #bbb;
+}
+
+
+
+/* Estilo para projetos */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project {
+  background-color: #0f0f0f;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 1.5rem;
+  color: #06d6a0;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #06d6a0;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.project a:hover {
+  background-color: #04b380;
+}
+
+/* Contato */
+section#contato ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+section#contato ul li {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #bbb;
+}
+
+section#contato .social-links a {
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+/* Estilo para o link do logo */
+.logo a {
+  text-decoration: none;
+  color: inherit; /* Mantém a cor do texto e ícones */
+  display: block;
+}
+
+.logo a:hover h1 {
+  color: #04b380; /* Adiciona uma leve interação ao passar o mouse */
+}
+
+.logo a:hover p {
+  color: #fff; /* Deixa o texto mais destacado ao passar o mouse */
+}
+
+.certificacoes {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.certificacoes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.certificacoes ul li {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.certificacoes ul li span {
+  color: #bbb;
+  font-size: 1rem;
+}
+
+.btn-certificado {
+  text-decoration: none;
+  background-color: #06d6a0;
+  color: #0f0f0f;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.btn-certificado:hover {
+  background-color: #04a679;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #0f0f0f;
+  color: #bbb;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+
+
+
+
+
